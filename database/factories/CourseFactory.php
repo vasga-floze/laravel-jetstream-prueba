@@ -22,7 +22,15 @@ class CourseFactory extends Factory
     public function definition()
     {
         return [
-            //
+            //definir estructura de datos falsos a insertar
+            'name'=>$this->faker->sentence,
+            'slug'=>$this->faker->slug,
+            'image'=>$this->faker->imageUrl(1280, 720), //entre parentesis van la cantidad de caracteres
+            'description'=>$this->faker->text(800),
+            
+            //campos de la relacion
+            'user_id'=> rand(1,5),
+            'category_id'=>rand(1,3),
         ];
     }
 }

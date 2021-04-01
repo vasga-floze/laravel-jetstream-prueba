@@ -22,7 +22,12 @@ class PostFactory extends Factory
     public function definition()
     {
         return [
-            //
+            //definir estructura de datos falsos a insertar
+            'name'=>$this->faker->sentence,
+            'free' => rand(0,1),
+
+            //a que curso pertenece cada leccion
+            'course_id'=>rand(1,10)
         ];
     }
 }

@@ -22,7 +22,8 @@ class CategoryFactory extends Factory
     public function definition()
     {
         return [
-            //
+            //se define la estructura de los datos que se van a insertar
+            'name'=> $this->faker->word
         ];
     }
 }
