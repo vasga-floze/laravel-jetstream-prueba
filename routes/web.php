@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 //Esta es la ruta que llama a la vista index
 //... aqui se dice abre en la carpeta views la vista index
-Route::view('/','index' );
+Route::view('/','index' )->name('home'); //con el name('home') se está asignando un nombre a la ruta... creo...
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
