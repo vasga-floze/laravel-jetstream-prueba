@@ -12,10 +12,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
+//Esta es la ruta que llama a la vista index
+//... aqui se dice abre en la carpeta views la vista index
+Route::view('/','index' );
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
