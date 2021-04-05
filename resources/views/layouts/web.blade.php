@@ -34,7 +34,7 @@
             <!--Sino hacemos esto otro...(mostrar los botones de login y registro)-->
         @else
             <a href="{{ url('login') }}" class="text-sm text-gray-700 underline">Login</a>
-            <a href="{{ url('registro') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
+            <a href="{{ url('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
             <!--Se finaliza la condición.-->
         @endif
     </footer>
